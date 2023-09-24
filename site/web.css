@@ -37,23 +37,19 @@ header{
 /*seção carrossel*/
 .carousel-container {
     width: 100%;
-    margin: 0 auto;
     overflow: hidden;
-    position: static;
-    align-items: center;
+    white-space: nowrap;
+    position: relative;
 }
 
 .carousel-slide {
-    display: inline-block;
-    width: 10px;
-    transition: transform 0,0s ;
-    align-items: center;
-    margin-left: center;
-
+    display: inline-block; 
+    vertical-align: top; 
+    width: 33%; 
 }
 
 .carousel-slide img {
-    max-width: 200px;
+    max-width: 100%; 
     height: auto;
 }
 
@@ -69,12 +65,6 @@ button {
 
 button:hover {
     background-color: red;
-}
-
-.carousel-slide{
-    padding-top: auto;
-    width: auto;
-    height: 50px;
 }
 
 /*container secundário, noticias*/

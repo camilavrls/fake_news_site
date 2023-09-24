@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Cadastro </title>
+    <link rel="stylesheet" type="text/css" href="form1.css">
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de feedback</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="nome" nome="nome" id="nome" riquired>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="sobrenome" id="sobrenome" riquired>
+            </div>
+            <br>
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" nome="email" id="email" riquired>
+            </div>
+            <div class="campo">
+                <label><strong>De qual maneira deve ser praticada para combater a fake news?</strong></label>
+                <label>
+                    <input type="radio" nome="informcao" value="informacao" ckecked><strong>Informação</strong>
+                </label>
+                <label>
+                    <input type="radio" nome="pesquisa" value="pesquisa"><strong> Pesquisa</strong>
+                </label>
+                <label>
+                    <input type="radio" nome="estudos" value="estudos"><strong>Estudo</strong>
+                </label>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="Tipos de fake news"><strong>Tipos de fake news</strong></label>
+                <select id="tipos">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Política</option>
+                    <option>Religião</option>
+                    <option>Esportes</option>
+                    <option>Economia</option>
+                    <option>Saúde</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="campo">
+                <br>
+                <label><strong> Um feedback da nossa page:</strong></label><br>
+                <textarea row="10" cols="30" id="feedback"></textarea>
+            </div>
+            <br>
+            <button class="botao" type="submit">Concluído</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
