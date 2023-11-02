@@ -5,20 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web.css">
-    <title>Carrossel de Fotos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Site Fake News</title>
 </head>
 
 <body>
 
     <header>
         <div class="contentHeader">
-            <a href="form1.html" id="formsLink">Entre em contato</a>
+            <img src="imagens/logoFakeNews.png" alt="logo escrito fake news"></img>
+        </div>
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a href="web1.html">Home</a></li>
+                    <li><a href="#">Vídeo</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </nav>
+            <button>
+                <a href="form1.html">Entre em contato</a>
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </button>
         </div>
     </header>
 
     <section class="containerCarrossel">
         <div class="carousel-container">
-            <div class="carousel-slide" >
+            <div class="carousel-slide">
                 <img src="imagens/FAKE NEWS.png" alt="Imagem 1">
             </div>
             <div class="carousel-slide">
@@ -34,35 +50,34 @@
     </section>
 
     <section class="containerSecundario">
-        <div class="noticia">
-            <img src="imagens/noticia1.jpg">
-            <p class="textoNoticia">Apesar de parecer recente, o termo fake news, ou notícia falsa, em português, é mais
-                antigo do que aparenta. Segundo o dicionário Merriam-Webster, essa expressão é usada desde o final do
-                século XIX. O termo é em inglês, mas se tornou popular em todo o mundo para denominar informações falsas
-                que são publicadas, principalmente, em redes sociais.</p>
-            <a href="https://mundoeducacao.uol.com.br/curiosidades/fake-news.htm" class="saibamais">Saiba mais</a>
+        <div class="Title">
+            <p>Principais Notícias</p>
         </div>
-        <div class="noticia">
-            <img src="imagens/noticia2.png">
-            <p class="textoNoticia">A educação virtual é uma arma importante para detectar informações falsas no
-                noticiário, segundo especialistas. Essa “alfabetização” deve contar com esforços de vários setores da
-                sociedade, para evitar que as chamadas fake news tumultuem o debate público, como ocorreu na corrida
-                eleitoral americana e na votação pela saída do Reino Unido da União Europeia.</p>
-            <a href="https://infograficos.estadao.com.br/focas/politico-em-construcao/materia/senso-critico-e-arma-para-combater-fake-news"
-                class="saibamais">Saiba mais</a>
-        </div>
-        <div class="noticia">
-            <img src="imagens/noticia3.jpg">
-            <p class="textoNoticia">Logo no início da pandemia, em abril de 2020, o diretor geral da OMS, Tedros Adhanom
-                Ghebreyesus, disse que não estávamos apenas lutando contra a epidemia da COVID-19, mas também com uma
-                “infodemia”. Esse termo foi utilizado para se referir ao alto número de informações que são difundidas,
-                verdadeiras ou não, sobre algum tópico em específico, neste caso, a pandemia.</p>
-            <a href="https://agemt.pucsp.br/noticias/como-podemos-combater-fake-news" class="saibamais">Saiba mais</a>
+        <div class="campoNoticias">
+            <div class="noticia">
+                <img src="imagens/noticia1.jpg">
+                <p class="tituloNoticia">Titulo</p>
+                <p class="textoNoticia">Apesar de parecer recente, o termo 'fake news', em português, é mais antigo do que aparenta. Segundo o dicionário Merriam-Webster, essa expressão é usada desde o final do século XIX. O termo é em inglês, mas se popularizou globalmente para descrever informações falsas publicadas, principalmente em redes sociais.</p>
+                <a href="https://mundoeducacao.uol.com.br/curiosidades/fake-news.htm" class="saibamais">Saiba mais</a>
+            </div>
+            <div class="noticia">
+                <img src="imagens/noticia2.png">
+                <p class="tituloNoticia">Titulo</p>
+                <p class="textoNoticia">A educação virtual é vital para detectar informações falsas no noticiário, segundo especialistas. Essa 'alfabetização' requer esforços de diversos setores da sociedade, evitando que as 'fake news' tumultuem debates públicos, como na corrida eleitoral americana e na votação do Reino Unido para sair da União Europeia.</p>
+                <a href="https://infograficos.estadao.com.br/focas/politico-em-construcao/materia/senso-critico-e-arma-para-combater-fake-news"
+                    class="saibamais">Saiba mais</a>
+            </div>
+            <div class="noticia">
+                <img src="imagens/noticia3.jpg">
+                <p class="tituloNoticia">Titulo</p>
+                <p class="textoNoticia">O "G1 Fato ou Fake" é uma plataforma de verificação de fatos do Grupo Globo. Sua missão é analisar informações para determinar sua veracidade e combater a desinformação. O projeto se dedica a esclarecer notícias e boatos, ajudando o público a identificar o que é fato e o que é falso, promovendo transparência educação.</p>
+                <a href="https://g1.globo.com/fato-ou-fake/" class="saibamais">Saiba mais</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        Feito com 🖤 por Camila Vitória Sousa, Maria Clara Ramos e Isabelle Franco
+        <p class="footerInfo">Feito com ❤️ por Camila Vitória Sousa, Maria Clara Ramos e Isabelle Franco</p>
     </footer>
 
 </body>
