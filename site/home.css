@@ -122,8 +122,27 @@ button {
     padding-bottom: 30px;
 }
 
+.headerNoticia{
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+
+.headerNoticia img{
+    max-width: 40px;
+    margin-right: 12px;
+}
+
+.headerNoticia p{
+    color: #1D1B20;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.419px;
+    letter-spacing: 0.115px;
+}
+
 .noticia img{
-    margin-top: 56px;
     width: 100%;
 }
 
