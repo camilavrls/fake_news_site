@@ -43,6 +43,9 @@ header{
     color: #fff;
     border: none;
     border-radius: 2.78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .links button a{
@@ -97,12 +100,18 @@ button {
 }
 
 /*container secundário, noticias*/
-.Title {
+.containerSecundario {
+    display: block;
+}
+
+.principaisNoticias {
     color: #4D4D4D;
     height: 53px;
     font-size: 32px;
     font-weight: 500;
     line-height: 52.901px;
+    text-align: left;
+    margin-left: 32px;
 }
 
 .noticia {
@@ -110,6 +119,7 @@ button {
     background-color: #F5F7FA;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10), 0px 15px 15px 0px rgba(0, 0, 0, 0.09), 0px 34px 21px 0px rgba(0, 0, 0, 0.05), 0px 61px 24px 0px rgba(0, 0, 0, 0.01), 0px 95px 27px 0px rgba(0, 0, 0, 0.00);
     max-width: 400px;
+    padding-bottom: 30px;
 }
 
 .noticia img{
@@ -118,6 +128,7 @@ button {
 }
 
 p.tituloNoticia{
+    color: #49454F;
     text-align: start;
     margin: 16px 16px;
 }
@@ -130,6 +141,7 @@ p.tituloNoticia{
 }
 
 .textoNoticia{
+    color: #49454F;
     width: calc(100% - 32px);
     max-height: 100px;
     text-align: start;
@@ -137,22 +149,27 @@ p.tituloNoticia{
     overflow: hidden;
 }
 
-a.saibamais{
-    border: black solid 1px;
-    border-radius: 10px;
-    padding: 8px 16px;
+.saibamais{
+    background-color: #363636;
+    color: white;
+    border-radius: 2.78px;
+    padding: 8px 20px;
+    float: right;
+    margin-right: 16px;
+}
+
+.saibamais a {
     text-decoration: none;
-    color: black;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.349px; 
+    letter-spacing: 0.077px;
 }
 
 .saibamais:hover{
-    background-color: black;
-    color: white;
-}
-
-.saibamais:visited{
-    background-color: black;
-    color: purple;
+    background-color: purple;
 }
 
 /*rodapé*/
