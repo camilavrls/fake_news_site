@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Site Fake News</title>
 </head>
 
@@ -25,7 +26,7 @@
                     <li><a href="#">Page 3</a></li>
                 </ul>
             </nav>
-            <button>
+            <button class="entreEmContato">
                 <a href="form1.html">Entre em contato</a>
                 <span class="material-symbols-outlined">arrow_right_alt</span>
             </button>
@@ -33,19 +34,23 @@
     </header>
 
     <section class="containerCarrossel">
-        <div class="carousel-container">
+        <div class="carousel-wrapper">
             <div class="carousel-slide">
-                <img src="imagens/FAKE NEWS.png" alt="Imagem 1">
+                <img class= "imgCarrossel" src="imagens/Carrossel1.png" alt="Imagem 1">
             </div>
             <div class="carousel-slide">
-                <img src="imagens/FAKE NEWS (1).png" alt="Imagem 2">
+                <img class="imgCarrossel" src="imagens/Carrossel2.png" alt="Imagem 2">
             </div>
             <div class="carousel-slide">
-                <img src="imagens/FN.jpg" alt="Imagem 3">
+                <img class="imgCarrossel" src="imagens/Carrossel3.png" alt="Imagem 3">
             </div>
         </div>
-        <button id="prevBtn">Anterior</button>
-        <button id="nextBtn">Próximo</button>
+        <button id="prevBtn" onclick="changeSlide(-1)">
+            <span class="material-symbols-rounded">arrow_back_ios</span>
+        </button>
+        <button id="nextBtn" onclick="changeSlide(1)">
+            <span class="material-symbols-rounded">arrow_forward_ios</span>
+        </button>
         <script src="home.js"></script>
     </section>
 
@@ -59,9 +64,12 @@
                     <img src="imagens/mundoEducacao.png">
                     <p>MUNDO EDUCAÇÃO</p>
                 </div>
-                <img src="imagens/noticia1.jpg">
-                <p class="tituloNoticia">Titulo</p>
-                <p class="textoNoticia">Apesar de parecer recente, o termo 'fake news', em português, é mais antigo do que aparenta. Segundo o dicionário Merriam-Webster, essa expressão é usada desde o final do século XIX. O termo é em inglês, mas se popularizou globalmente para descrever informações falsas publicadas, principalmente em redes sociais.</p>
+                <img src="imagens/noticia3.jpg">
+                <p class="tituloNoticia">O que significa fake news?</p>
+                <p class="textoNoticia">Apesar de parecer recente, o termo 'fake news', em português, é mais antigo do
+                    que aparenta. Segundo o dicionário Merriam-Webster, essa expressão é usada desde o final do século
+                    XIX. O termo é em inglês, mas se popularizou globalmente para descrever informações falsas
+                    publicadas, principalmente em redes sociais.</p>
                 <button class="saibamais">
                     <a href="https://mundoeducacao.uol.com.br/curiosidades/fake-news.htm">Saiba mais</a>
                 </button>
@@ -72,10 +80,15 @@
                     <p>ESTADÃO</p>
                 </div>
                 <img src="imagens/noticia2.png">
-                <p class="tituloNoticia">Titulo</p>
-                <p class="textoNoticia">A educação virtual é vital para detectar informações falsas no noticiário, segundo especialistas. Essa 'alfabetização' requer esforços de diversos setores da sociedade, evitando que as 'fake news' tumultuem debates públicos, como na corrida eleitoral americana e na votação do Reino Unido para sair da União Europeia.</p>
+                <p class="tituloNoticia">Senso crítico é arma para combater ‘fake news’</p>
+                <p class="textoNoticia">A educação virtual é vital para detectar informações falsas no noticiário,
+                    segundo especialistas. Essa 'alfabetização' requer esforços de diversos setores da sociedade,
+                    evitando que as 'fake news' tumultuem debates públicos, como na corrida eleitoral americana e na
+                    votação do Reino Unido para sair da União Europeia.</p>
                 <button class="saibamais">
-                    <a href="https://infograficos.estadao.com.br/focas/politico-em-construcao/materia/senso-critico-e-arma-para-combater-fake-news">Saiba mais</a>
+                    <a
+                        href="https://infograficos.estadao.com.br/focas/politico-em-construcao/materia/senso-critico-e-arma-para-combater-fake-news">Saiba
+                        mais</a>
                 </button>
             </div>
             <div class="noticia">
@@ -83,9 +96,12 @@
                     <img src="imagens/g1.svg">
                     <p>G1</p>
                 </div>
-                <img src="imagens/noticia3.jpg">
-                <p class="tituloNoticia">Titulo</p>
-                <p class="textoNoticia">O "G1 Fato ou Fake" é uma plataforma de verificação de fatos do Grupo Globo. Sua missão é analisar informações para determinar sua veracidade e combater a desinformação. O projeto se dedica a esclarecer notícias e boatos, ajudando o público a identificar o que é fato e o que é falso, promovendo transparência educação.</p>
+                <img src="imagens/noticia1.jpg">
+                <p class="tituloNoticia">Fato ou Fake?</p>
+                <p class="textoNoticia">O "G1 Fato ou Fake" é uma plataforma de verificação de fatos do Grupo Globo. Sua
+                    missão é analisar informações para determinar sua veracidade e combater a desinformação. O projeto
+                    se dedica a esclarecer notícias e boatos, ajudando o público a identificar o que é fato e o que é
+                    falso, promovendo transparência educação.</p>
                 <button class="saibamais">
                     <a href="https://g1.globo.com/fato-ou-fake/">Saiba mais</a>
                 </button>

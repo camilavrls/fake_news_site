@@ -38,7 +38,7 @@ header{
     color: #4D4D4D;  
 }
 
-.links button {
+.entreEmContato {
     background-color: #E30211;
     color: #fff;
     border: none;
@@ -46,9 +46,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 15px;
 }
 
-.links button a{
+.entreEmContato a{
     text-decoration: none;
     color: white;
 }
@@ -71,32 +72,49 @@ header{
 }
 
 /*seção carrossel*/
-.carousel-container {
+.containerCarrossel{
+    overflow-x: hidden;
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    min-width: 100%;
 }
 
 .carousel-slide {
-    display: inline-block; 
-    vertical-align: top; 
-    width: 33%; 
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.carousel-slide img {
-    max-width: 100%; 
-    height: auto;
+.imgCarrossel {
+    width: 100%;
+    max-height: 416.95;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+#prevBtn {
+    position: relative;
+    margin-right: 15px;
+    bottom: 50px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 12px;
     cursor: pointer;
+    border: none;
+    background-color: #F5F7FA;
+}
+
+#nextBtn {
+    position: relative;
+    margin-left: 15px;
+    bottom: 50px;
+    padding: 12px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #F5F7FA;
 }
 
 /*container secundário, noticias*/
@@ -112,6 +130,7 @@ button {
     line-height: 52.901px;
     text-align: left;
     margin-left: 32px;
+    margin-top: -40px;
 }
 
 .noticia {

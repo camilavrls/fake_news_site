@@ -1,26 +1,25 @@
-const carouselContainer = document.querySelector('.carousel-container');
-const slides = document.querySelectorAll('.carousel-slide');
-const prevButton = document.getElementById('prevBtn');
-const nextButton = document.getElementById('nextBtn');
 let currentIndex = 0;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${1000* (i - index)}%)`;
-    });
+function changeSlide(n) {
+    currentIndex += n;
+    showSlide();
 }
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+function showSlide() {
+    const slides = document.querySelector('.carousel-wrapper');
+
+    if (currentIndex > slides.children.length - 1) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = slides.children.length - 1;
+    }
+
+    slides.style.transition = 'transform 0.5s ease'; 
+    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
 }
 
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
+function autoChangeSlide() {
+    changeSlide(1); 
 }
 
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
-
-showSlide(currentIndex);
+setInterval(autoChangeSlide, 15000);
