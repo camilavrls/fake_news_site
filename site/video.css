@@ -58,24 +58,18 @@ header{
     padding: 5px;
 }
 
-footer{
-    background-color: #363636;
-    width: 100%;
-    height: 73px;
-    display:flex;
+.videoPrincipal{
+    width: 950px;
+    margin:0 auto;
+    display: block;
 }
 
-.footerInfo {
-    display: flex;
-    width: 100%;
-    color: #F5F7FA;
-    font-size: 16px;
-    margin-left: 24px;
+.video {
+    text-align: center;
+    font-size: 30px;
 }
 
 body{
-    font-size: 20px;
     background-color: #F5F7FA;
     font-family: 'Inter', sans-serif;
-    padding: 15px;
 }
